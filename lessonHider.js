@@ -4,7 +4,8 @@ angular.module('directivePractice').directive('lessonHider', function() {
     restrict: 'E',
     scope: {
       lesson: '=',
-      dayAlert: '&' //passing a function
+      dayAlert: '&', //passing a function,
+      deleteLesson: '&'
     },
     link: function(scope, element, attributes) {
       scope.checkBoxClicked = function(lesson) {

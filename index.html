@@ -8,9 +8,9 @@
 </head>
 <body ng-controller="lessonCtrl">
   <ul>
-    <lesson-hider ng-repeat="lesson in lessons" lesson="lesson" day-alert="announceDay(lesson,day)"></lesson-hider>
+    <lesson-hider delete-lesson="deleteLesson(lesson)" ng-repeat="lesson in lessons" lesson="lesson" day-alert="announceDay(lesson,day)"></lesson-hider>
   </ul>
-  
+
 
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
   <script src="app.js"></script>

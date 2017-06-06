@@ -5,6 +5,11 @@ angular.module('directivePractice').controller('lessonCtrl', function($scope,les
       alert(lesson + ' is active on ' + day + ".")
     }
   }
+  $scope.deleteLesson= function(lesson){
+    $scope.lessons = $scope.lessons.filter(function(c){
+      return lesson !== c
+    })
+  }
 })
 
 var lessons = ['Services','Routing','Directives','Review','Firebase','No server project','Node','Express','Mango'];
